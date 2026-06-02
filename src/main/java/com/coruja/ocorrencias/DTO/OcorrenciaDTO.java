@@ -1,4 +1,4 @@
-package com.coruja.ocorrencias.DTO;
+package com.coruja.ocorrencias.dto;
 
 import java.util.List;
 
@@ -18,6 +18,7 @@ public class OcorrenciaDTO {
     private String emailDestino;
     @NotEmpty(message = "Precisa encaminhar algum anexo")
     private List<MultipartFile> foto;
+
 
     public String getTitulo() {
         return titulo;
