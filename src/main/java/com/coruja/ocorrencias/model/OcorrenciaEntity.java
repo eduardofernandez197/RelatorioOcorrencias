@@ -1,4 +1,4 @@
-package com.coruja.ocorrencias.repository;
+package com.coruja.ocorrencias.model;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -18,7 +18,7 @@ public class OcorrenciaEntity  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ElementCollection
+
     private String titulo;
     private String descricao;
     private String emailDestino;

@@ -14,6 +14,7 @@ public class OcorrenciaDTO {
     private String titulo;
     @NotBlank(message = "Descrição é Obrigatório")
     private String descricao;
+    @NotBlank(message = "E-mail e Obrigatório")
     @Email(message = "E-mail obrigatório")
     private String emailDestino;
     @NotEmpty(message = "Precisa encaminhar algum anexo")
