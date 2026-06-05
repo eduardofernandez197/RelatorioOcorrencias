@@ -10,10 +10,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.IdClass;
 
-@Entity
-public class OcorrenciaEntity  {
+@Entity(name = "relatorioocorrencia")
+public class OcorrenciaEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,7 +57,6 @@ public class OcorrenciaEntity  {
         this.emailDestino = emailDestino;
     }
 
-
     public LocalDateTime getDataCriacao() {
         return dataCriacao;
     }
@@ -74,7 +72,5 @@ public class OcorrenciaEntity  {
     public void setCaminhoFoto(List<String> caminhoFoto) {
         this.caminhoFoto = caminhoFoto;
     }
-
- 
 
 }
